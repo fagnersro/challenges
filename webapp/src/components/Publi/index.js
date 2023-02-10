@@ -7,14 +7,13 @@ export default function Publi() {
         <div className="publi-img"></div>
         <div className="publi-content">
           <div className="publi-content-title">
-            <h3>
-              Erro adb devices no Genymotion e Android Studio (React Native)
-            </h3>
+            <h3>Desenvolvedor de páginas web (ReactJs)</h3>
             <span>2 anos atrás</span>
           </div>
           <div className="publi-content-down">
             <p>
-              Erro adb devices no Genymotion e Android Studio (React Native)
+              apaixonado por tecnologia, ama desenvolver layouts e criar novas
+              experiências de usuários.
             </p>
             <div>
               <span>#reac-native</span>

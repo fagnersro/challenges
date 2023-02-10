@@ -9,6 +9,13 @@
 
   width: 952px;
   height: 201px;
+
+  transition: all 0.5s;
+}
+
+.container-publi:hover {
+  border: 1px solid ghostwhite;
+  cursor: pointer;
 }
 
 .wrap-publi {

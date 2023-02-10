@@ -29,13 +29,11 @@ code {
 }
 
 .App {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-evenly;
 }
 
 .box-app {
-  /* border: 1px solid blue; */
   width: fit-content;
 }
 
@@ -59,8 +57,6 @@ code {
 }
 
 .wrap-posts {
-  margin-top: 30px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,6 +89,7 @@ code {
 a {
   text-decoration: none;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 a:hover {

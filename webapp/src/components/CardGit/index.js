@@ -7,32 +7,39 @@ export default function CardGit() {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/fagnersro/repos').then(response =>
-      response.json().then(data => setRepos(data.slice(0, 4)))
-    );
+    api
+      .get('fagnersro/repos')
+      .then(({ data }) => {
+        setRepos(data.slice(0, 4));
+      })
+      .catch(err => {
+        console.log('Não conseguimos ' + err);
+      });
   }, []);
 
   return (
-    <div>
+    <div className="wrap-components">
       {repos.map(item => {
         return (
           <div className="container-card">
             <h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-folder"
-              >
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              {item.name}
+              <a href={item.html_url} target="_blanc">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-folder"
+                >
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                {item.name}
+              </a>
             </h2>
             <p>{item.description}</p>
             <div className="store-icons">
