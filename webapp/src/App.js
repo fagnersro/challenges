@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
 import Profile from './components/Profile';
 import Links from './components/Links';
 import Technologies from './components/Technologies';
 import Experiences from './components/Experiences';
 import Education from './components/Education';
-import api from './services/api';
+
 import CardGit from './components/CardGit';
 // lefts - imports
 
@@ -12,19 +11,6 @@ import Publi from './components/Publi';
 import './components/CardGit/style.css';
 
 function App() {
-  // const [repos, setRepos] = useState([]);
-
-  // useEffect(() => {
-  //   api
-  //     .get('fagnersro/repos')
-  //     .then(({ data }) => {
-  //       setRepos(data.slice(0, 2));
-  //     })
-  //     .catch(err => {
-  //       console.log('Não conseguimos ' + err);
-  //     });
-  // }, []);
-
   return (
     <div className="App">
       <div className="box-app">

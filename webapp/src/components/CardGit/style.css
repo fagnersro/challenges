@@ -4,7 +4,9 @@
   /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+
   margin-right: -1000px;
   width: 100%;
   height: 100%;
@@ -21,9 +23,8 @@
   justify-content: space-between;
 
   padding: 30px;
-  margin-bottom: 30px;
 
-  width: 461px;
+  width: 415px;
   height: 186px;
   transition: all 0.5s;
 }
@@ -35,7 +36,7 @@
 .container-card h2 a {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 
   display: flex;
@@ -47,7 +48,7 @@
 .container-card p {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
 }
 
@@ -65,12 +66,17 @@
 }
 
 .two-links p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-right: 16px;
 }
 
 .store-icons ul li p {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   gap: 8px;
 }
