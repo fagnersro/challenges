@@ -1,0 +1,60 @@
+@import url('../../index.css');
+
+.container-edu {
+  margin-top: 30px;
+  background: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  width: 348px;
+  height: 349px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px 20px 30px;
+}
+
+.container-edu h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.box-edu {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.box-edu ul {
+  margin-left: 46px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 100%;
+}
+
+.box-edu ul li span {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.box-edu ul li span:nth-child(1) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
